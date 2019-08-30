@@ -19,7 +19,7 @@ class String
     array.each{|word|
     #binding.pry
       if !word = " "
-        p array.length
+        p word.length
       end
     }
 

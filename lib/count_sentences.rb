@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     array = self.split
-    (/([a-z,\s,A-Z,&,,]*\?|[a-z,\s,A-Z,&,(,),(...)]*\.|[a-z,\s,A-Z,&,,]*!)/)
+    ([^.?!][a-zA-Z\s,&]*[..][^.?!])
     array.count
 
   end
